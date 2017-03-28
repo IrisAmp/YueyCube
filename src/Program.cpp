@@ -34,9 +34,8 @@ uint32_t dimColor(uint32_t color) {
     return (parts[0] << 16 | parts[1] << 8 | parts[2]);
 }
 
-Program::Program(ICube* _cube, IUtil* _util)
+Program::Program(ICube* _cube)
 	: cube(_cube)
-  , util(_util)
 	, count(0)
 {
 }

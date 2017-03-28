@@ -11,18 +11,6 @@
 
 SYSTEM_MODE(SEMI_AUTOMATIC);
 
-class Util : public IUtil
-{
-public:
-  Util()
-  { }
-
-  unsigned long millis()
-  {
-    return millis();
-  }
-};
-
 class Cube : public ICube
 {
 public:
@@ -96,9 +84,8 @@ protected:
 	}
 };
 
-Util util;
 Cube cube(Adafruit_NeoPixel(LED_COUNT, LED_PIN, PIXEL_TYPE));
-Program program(&cube, &util);
+Program program(&cube);
 
 bool connect = false;
 

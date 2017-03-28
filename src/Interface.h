@@ -3,12 +3,6 @@
 
 #include <cstdint>
 
-class IUtil {
-public:
-	virtual ~IUtil() {}
-	virtual unsigned long millis() = 0;
-};
-
 class ICube {
 public:
 	virtual ~ICube() {}
